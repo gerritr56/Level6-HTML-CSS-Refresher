@@ -1,0 +1,80 @@
+.font {
+    font-family: Calibri;
+}
+
+.container {
+    font-size: 22px;
+    width: 40%;
+    margin: 10px;
+    display: grid;
+    border: 1px solid rgb(182, 176, 176);
+    border-radius: 7px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 40px 40px 80px 60px;
+    grid-template-areas: 
+        "n n n n n n n n n n n p"
+        "i i i i i i i i i i i i"
+        "c c c c c c c c c c c c"
+        "a a a a a a d d d d d d";
+}
+
+.naam {
+    grid-area: n;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.info {
+    grid-area: i;
+    padding: 0px 10px;
+    font-size: 23px;
+    color: rgb(158, 153, 153);
+}
+
+.pix {
+    grid-area: p;
+    padding: 10px;
+}
+
+.content {
+    grid-area: c;
+    padding: 0px 10px;
+}
+
+.approve {
+    grid-area: a;
+    margin: 10px;
+    margin-right: 0px;
+    display: flex;
+    font-weight: bold;
+    color: rgb(32, 206, 32);
+    border: 2px solid;
+    border-right: 0;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.decline {
+    grid-area: d;
+    margin: 10px;
+    margin-left: 0px;
+    display: flex;
+    font-weight: bold;
+    color: rgb(219, 97, 97);
+    border: 2px solid;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container > div:nth-last-of-type(4n) {
+    border-bottom: 2px solid rgb(233, 231, 231);
+  }
+
+.flex {
+    display: flex;
+}
